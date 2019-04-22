@@ -21,7 +21,7 @@ namespace :portus do
     ::Helpers.check_arguments!(args, 4)
     check_registry!
 
-    u = User.createf!(
+    u = User.create!(
       username: args["username"],
       password: args["password"],
       email:    args["email"],
