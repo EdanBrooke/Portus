@@ -10,7 +10,7 @@ services:
       - PORTUS_PUMA_HOST=0.0.0.0:3000
       - PORTUS_CHECK_SSL_USAGE_ENABLED=false
       - PORTUS_SECURITY_CLAIR_SERVER=http://clair:6060
-
+      - PORTUS_LOG_LEVEL=debug
       - CCONFIG_PREFIX=PORTUS
 
       - PORTUS_DB_HOST=db

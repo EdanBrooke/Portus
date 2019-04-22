@@ -32,8 +32,10 @@ html
     = javascript_include_tag(*webpack_asset_paths("unauthenticated"),  defer: true)
     = yield :js_header
 
+
   body.login data-controller="#{js_controller}" data-route="#{js_route}"
     .container-fluid.vue-root
       = yield
+
 
     = yield :js_body
